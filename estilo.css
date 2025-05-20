@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f5f3f0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 35px;
+  }
+  .Perfil img {
+    width: 350px;
+    height: 350px;
+  }
+  .Contacto {
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
