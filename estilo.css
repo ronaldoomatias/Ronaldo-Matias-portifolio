@@ -1,65 +1,47 @@
-/* ===================== */
-/*        CABEÇALHO       */
-/* ===================== */
-
 header {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
   background-color: #F5F3F0;
   justify-content: center;
   margin: 0 auto;
-  display: flex; /* Alinha imagem_perfil e apresentacao lado a lado */
-  align-items: center;
-  padding: 0;
+  display: flex;
 }
 
-.container {
+.container_cabecalho {
   display: flex;
-  align-content: center;
-  justify-content: space-around;
-  width: 1440px;
+  max-width: 1440px;
   height: 700px;
+  align-items: center;
 }
 
 .imagem_perfil {
-  margin-top: 180px;
-  margin-left: 168px;
+  padding-left: 156px;
 }
 
 .imagem_perfil img {
-  align-items: center;
-  width: 358px;
-  height: 358px;
-  border-radius: 100%; /* Deixa a imagem redonda */
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
 }
 
-.apresentacao {
-  width: 1440px;
-  height: 224px;
-  margin-left: 125px;
-  margin-top: 125px;
+.bloco_apresentacao {
+  padding: 0 125px;
 }
 
-.apresentacao h1 {
-  font-weight: 100;
+.bloco_apresentacao h1 {
   font-size: 126px;
   letter-spacing: -2.17px;
   line-height: 112px;
-  width: 635px;
-  height: 224px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
-.apresentacao h3 {
+.bloco_apresentacao h3 {
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  line-height: 24px;
+  color: #9E8C6C;
 }
 
-.apresentacao a {
-  width: 224px;
-  height: 60px;
+.bloco_apresentacao a {
   border: 1px solid #0699A6;
   background-color: #0699A6;
   color: white;
@@ -68,78 +50,24 @@ header {
   padding: 18px 62px;
 }
 
-/* ===================== */
-/*        SEÇÃO PRINCIPAL */
-/* ===================== */
 
 section {
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
-/* Espaçamento entre blocos da esquerda */
 .habilidades,
 .premiacoes,
-.caracteristicas_profissionais {
+.caracteristicas {
   margin-bottom: 100px;
 }
-
-/* ===================== */
-/*     LISTAS GERAIS     */
-/* ===================== */
-
-ul {
-  list-style: none;       /* Remove marcadores */
-  padding-left: 0;        /* Remove recuo */
-  text-align: left;       /* Alinha texto à esquerda */
-}
-
-ul li {
-  margin: 10px 0;         /* Espaço vertical entre itens */
-}
-
-/* Lista de links em Trabalhos Recentes */
-.lista_de_links {
-  list-style: none;
-  padding-left: 0;
-  text-align: left;
-}
-
-.lista_de_links li {
-  margin: 10px 0;
-}
-
-.lista_de_links a {
-  text-decoration: none;
-  color: #0699A6;
-  font-size: 18px;
-}
-
-.lista_de_links a:hover {
-  text-decoration: underline;
-}
-
-/* Lista com espaçamento maior para Características Profissionais */
-.lista_caracteristicas {
-  list-style: none;
-  padding-left: 0;
-  text-align: left;
-}
-
-.lista_caracteristicas li {
-  margin-bottom: 20px;
-}
-
-/* ===================== */
-/*     COLUNA ESQUERDA   */
-/* ===================== */
 
 .coluna_esquerda {
   margin-top: 123px;
   width: 350px;
-  height: 1559px;
+  height: auto;
   background-color: #fff;
 }
 
@@ -147,25 +75,37 @@ ul li {
   color: #9E8C6C;
   font-weight: 700;
   font-size: 18px;
-  line-height: 34px;
+  line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.coluna_esquerda p {
+.coluna_esquerda p,
+.coluna_esquerda li {
   font-weight: 400;
   font-size: 20px;
   line-height: 34px;
   letter-spacing: 0;
 }
 
-.trabalhos_recentes p {
+.caracteristicas li {
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.trabalhos_recentes li {
   color: #0699A6;
 }
 
-/* ===================== */
-/*     COLUNA DIREITA     */
-/* ===================== */
+.trabalhos_recentes a {
+  text-decoration: none; 
+  color: #0699A6;         
+  font-size: 18px;
+}
+
+.trabalhos_recentes a:hover {
+  text-decoration: underline; 
+}
 
 .coluna_direita {
   width: 635px;
@@ -188,7 +128,6 @@ ul li {
 }
 
 .barra_destaque {
-  color: #0699A6;
   background-color: #0699A6;
   width: 76px;
   height: 10px;
@@ -199,62 +138,73 @@ ul li {
   font-size: 36px;
 }
 
-/* ===================== */
-/*     EXPERIÊNCIA        */
-/* ===================== */
-
-.cartao {
+.cartao_experiencia {
   width: 635px;
-  height: 238px;
   margin-bottom: 64px;
 }
 
-.cartao p {
+.cartao_experiencia p {
   line-height: 32px;
+  margin-top: -8px;
 }
 
 .detalhes_experiencia {
-  max-width: 100%;
-  height: auto;
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
+  margin-top: -20px;
 }
 
 .detalhes_experiencia h3 {
   color: #9E8C6C;
 }
 
-/* ===================== */
-/*        RODAPÉ         */
-/* ===================== */
+.formacao h2 {
+  margin-top: 70px;
+}
+
+.detalhes_formacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.detalhes_formacao h3 {
+  color: #9E8C6C;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 
 footer {
   display: flex;
-  align-items: center;
+  align-content: center;
   max-width: 100%;
   min-height: 560px;
   background-color: #F5F3F0;
-  width: 100%;
-  margin: 350px;
-  padding: 0;
+  margin-top: 80px;
 }
 
-.rodape {
+.rodape_conteudo {
   text-align: center;
   width: 793px;
-  height: 258px;
+  height: auto;
   margin: 0 auto;
-  padding-top: 176px;
+  padding-top: 158px;
   padding-bottom: 116px;
 }
 
-.rodape h2 {
+.rodape_conteudo h2 {
   font-weight: 900;
   font-size: 66px;
   line-height: 82px;
 }
 
-.rodape h3 {
+.rodape_conteudo h3 {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
@@ -270,149 +220,119 @@ footer {
 }
 
 
+@media screen and (max-width: 1023px) {
+
+  .container_cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .imagem_perfil {
+    margin: 40px auto;
+    padding-left: 0;
+  }
+
+  .imagem_perfil img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .bloco_apresentacao {
+    width: 100%;
+    height: auto;
+    margin: 20px auto 60px;
+    text-align: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  .bloco_apresentacao h1 {
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 20px;
+  }
+
+  .bloco_apresentacao h3 {
+    font-size: 14px;
+  }
+
+  .bloco_apresentacao a {
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+
+  section {
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .coluna_esquerda,
+  .coluna_direita {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .experiencia {
+    margin-top: 60px;
+  }
+
+  .sobre_mim {
+    width: 100%;
+    height: auto;
+  }
+
+  .cartao_experiencia {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .coluna_direita {
+    margin-left: 0;
+  }
+
+  .detalhes_experiencia,
+  .detalhes_formacao {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .rodape_conteudo {
+    width: 100%;
+    padding: 60px 16px;
+  }
+
+  .rodape_conteudo h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .rodape_conteudo h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .redes_sociais {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 480px) {
-/* Container principal com padding e largura 100% */
-.container {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 0 16px; /* espaçamento horizontal */
-  box-sizing: border-box;
-}
+  .bloco_apresentacao h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
 
-/* Cabeçalho: flex column e centralizado */
-header {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.imagem_perfil {
-  margin: 40px 0 20px 0;
-}
-
-.imagem_perfil img {
-  width: 180px;
-  height: 180px;
-}
-
-/* Apresentação centralizada e responsiva */
-.conteiner {
-max-width: 1440px; /* largura fixa do conteúdo */
-margin: 0 auto;    /* centraliza horizontalmente */
-padding: 0 16px;   /* espaçamento interno para pequenas telas */
-}
-.apresentacao {
-  width: 100%;
-  max-width: 360px; /* controla o máximo para não ficar muito largo */
-  height: auto;
-  margin: 0 auto 40px auto;
-  text-align: center;
-}
-
-.apresentacao h1 {
-  font-size: 42px;
-  line-height: 48px;
-}
-
-.apresentacao h3 {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.apresentacao a {
-display: inline-block;
-width: auto;               /* Ajusta à largura do conteúdo */
-max-width: 100%;           /* Evita estouro da tela */
-padding: 14px 30px;
-font-size: 14px;
-text-align: center;
-margin: 20px auto 0 auto;  /* Centraliza no mobile */
-cursor: pointer;
-}
-
-/* Seção principal em coluna */
-section {
-  flex-direction: column;
-  align-items: flex-start; /* Alinha conteúdo à esquerda */
-  padding: 0 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Colunas esquerda e direita responsivas */
-.coluna_esquerda,
-.coluna_direita {
-  width: 100%;
-  max-width: none;
-  margin: 20px 0;
-}
-
-/* Cabeçalhos centralizados nas colunas */
-.coluna_direita h2,
-.coluna_esquerda h3 {
-  text-align: left; /* alinhado à esquerda, conforme pedido */
-}
-
-/* Cartões de experiência responsivos */
-.cartao {
-  width: 100%;
-  height: auto;
-}
-
-/* Ajusta o layout interno da experiência para coluna */
-.detalhes_experiencia {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-/* Barra de destaque centralizada com margin auto */
-.barra_destaque {
-  margin: 32px auto;
-}
-
-/* Rodapé centralizado e com padding */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 16px;
-  width: 100%;
-  box-sizing: border-box;
-  min-height: auto; /* remove altura fixa */
-}
-
-.rodape {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  margin: 0 auto;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.rodape h2 {
-  font-size: 32px;
-  line-height: 40px;
-}
-
-.rodape h3 {
-  font-size: 18px;
-  line-height: 24px;
-}
-
-/* Redes sociais com espaçamento e quebra */
-.redes_sociais {
-  flex-wrap: wrap;
-  gap: 16px;
-  width: auto;
-  margin-top: 20px;
-  justify-content: center;
-}
+  .bloco_apresentacao a {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
 }
