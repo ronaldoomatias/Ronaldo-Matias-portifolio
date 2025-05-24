@@ -1,3 +1,9 @@
+:root{
+  /*cores*/
+  --color-primary: #06996;
+  --color-secundary: #9e8c6c;
+
+}
 header {
   background-color: #F5F3F0;
   justify-content: center;
@@ -38,12 +44,12 @@ header {
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #9E8C6C;
+  color: var(--color-secundary);
 }
 
 .bloco_apresentacao a {
-  border: 1px solid #0699A6;
-  background-color: #0699A6;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
   color: white;
   text-decoration: none;
   text-align: center;
@@ -72,7 +78,7 @@ section {
 }
 
 .coluna_esquerda h3 {
-  color: #9E8C6C;
+  color: var(--color-secundary);
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -94,12 +100,12 @@ section {
 }
 
 .trabalhos_recentes li {
-  color: #0699A6;
+  color: var(--color-primary);
 }
 
 .trabalhos_recentes a {
   text-decoration: none; 
-  color: #0699A6;         
+  color: var(--color-primary);         
   font-size: 18px;
 }
 
@@ -128,7 +134,7 @@ section {
 }
 
 .barra_destaque {
-  background-color: #0699A6;
+  background-color: var(--color-primary);
   width: 76px;
   height: 10px;
   margin-top: 80px;
@@ -156,7 +162,7 @@ section {
 }
 
 .detalhes_experiencia h3 {
-  color: #9E8C6C;
+  color: var(--color-secundary);
 }
 
 .formacao h2 {
@@ -170,7 +176,7 @@ section {
 }
 
 .detalhes_formacao h3 {
-  color: #9E8C6C;
+  color: var(--color-secundary);
 }
 
 ul {
@@ -208,7 +214,7 @@ footer {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  color: #0699A6;
+  color: var(--color-primary);
 }
 
 .redes_sociais {
