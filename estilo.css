@@ -137,6 +137,42 @@
   transition: color 0.3s ease;
 }
 
+.container_card{
+  display: flex;
+  justify-content: space-between;
+}
+.container_card a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-secundary);
+  transition: width 0.3s ease;
+}
+
+.container_card a:hover,
+.container_card a:focus {
+  color: var(--color-secundary);
+}
+
+.container_card a:hover::after,
+.container_card a:focus::after {
+  width: 100%;
+}
+
+
+.Portifolio a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  
+}
+
 .trabalhos_recentes a::after {
   content: "";
   position: absolute;
